@@ -1,6 +1,6 @@
 # Python-sin-fronteras
 
-Ejercicios basados en el curso de [Python sin fronteras HTML/CSS/MySQL] (https://www.udemy.com/course/python-sin-fronteras-html-css-mysql/)
+Ejercicios basados en el curso de [Python sin fronteras HTML/CSS/MySQL](https://www.udemy.com/course/python-sin-fronteras-html-css-mysql/)
 
 ## Setup python virtualenv
 
