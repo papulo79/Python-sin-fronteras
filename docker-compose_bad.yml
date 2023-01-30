@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+    - "5000:5000"
+    volumes:
+    - .:/code
+    environment:
+      PYTHON_VER: 3.11
+  debug:
+    image: python:3.11
+    command: ["/bin/sh", "-c", "pip install ptvsd && python -m ptvsd --host 0.0.0.0 --port 5678 --wait --multiprocess --breakpoint --module app.py"]
+    ports:
+    - 5678:5678
+    volumes:
+    - .:/code
